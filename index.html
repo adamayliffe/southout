@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southout IT Solutions - Your Partner in Digital Transformation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .bg-gradient-southout {
+            background-image: linear-gradient(to right, #4F46E5, #3B82F6);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-gray-900">Southout</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">About</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Services</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button - for a more complex implementation -->
+            <button class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="bg-white py-20 md:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Your Partner in Digital Transformation
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Southout provides innovative IT solutions and expert consulting to help your business thrive in the digital age.
+                </p>
+                <a href="#contact" class="inline-block bg-gradient-southout text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    Get a Free Consultation
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-gray-50 py-16 md:py-24">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Southout</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Founded on the principles of integrity and excellence, Southout is dedicated to empowering businesses with cutting-edge technology. We believe that technology should be a driver of growth, not a source of complexity. Our team of certified professionals works closely with you to understand your unique challenges and deliver tailored, scalable solutions that meet your goals.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        We are committed to providing reliable support and strategic advice, ensuring your IT infrastructure is secure, efficient, and future-proof.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/2563eb/ffffff?text=Our+Team" alt="A team of professionals working together" class="w-full rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
+                    We offer a comprehensive suite of IT services designed to support your business every step of the way.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10m-4-2h4m10 0h4m-4 2h4M4 14h4m-4-2h4m-4-2h4m-4-2h4m-4-2h4m-4-2h4m-4 2h4"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Managed IT Services</h3>
+                        <p class="text-gray-600">
+                            Proactive support and maintenance to keep your systems running smoothly, 24/7.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 2.21-1.79 4-4 4s-4-1.79-4-4 1.79-4 4-4m0 8h.01M16 11c0 2.21-1.79 4-4 4s-4-1.79-4-4 1.79-4 4-4m0 8h.01"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Cloud Solutions</h3>
+                        <p class="text-gray-600">
+                            Leverage the power of the cloud for scalability, flexibility, and cost efficiency.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Cybersecurity</h3>
+                        <p class="text-gray-600">
+                            Protect your business from threats with robust security strategies and monitoring.
+                        </p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                        <p class="text-gray-600">
+                            Create a powerful online presence with custom web design and development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-50 py-16 md:py-24">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                    <p class="text-gray-600 mb-6">
+                        Ready to elevate your business with cutting-edge IT solutions? We'd love to hear from you. Fill out the form or contact us directly using the information below.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span class="text-gray-600">contact@southout.com</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span class="text-gray-600">+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657l-4.243 4.243a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class="text-gray-600">123 Business Avenue, Suite 456, City, State 12345</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full p-8 bg-white rounded-xl shadow-lg">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div class="flex justify-end">
+                            <button type="submit" class="bg-gradient-southout text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-center items-center md:justify-between mb-4 space-y-4 md:space-y-0">
+                <p class="text-sm">&copy; 2023 Southout IT Solutions. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.013 4.856.071 1.178.055 1.761.233 2.14.372a4.4 4.4 0 011.69 1.094 4.4 4.4 0 011.094 1.69c.139.379.317.962.372 2.14.058 1.272.071 1.652.071 4.856s-.013 3.584-.071 4.856c-.055 1.178-.233 1.761-.372 2.14a4.4 4.4 0 01-1.094 1.69 4.4 4.4 0 01-1.69 1.094c-.379.139-.962.317-2.14.372-1.272.058-1.652.071-4.856.071s-3.584-.013-4.856-.071c-1.178-.055-1.761-.233-2.14-.372a4.4 4.4 0 01-1.69-1.094 4.4 4.4 0 01-1.094-1.69c-.139-.379-.317-.962-.372-2.14-.058-1.272-.071-1.652-.071-4.856s.013-3.584.071-4.856c.055-1.178.233-1.761.372-2.14a4.4 4.4 0 011.094-1.69 4.4 4.4 0 011.69-1.094c.379-.139.962-.317 2.14-.372C8.416 2.176 8.796 2.163 12 2.163zm0-1.84a6.38 6.38 0 00-6.4 6.38v.01c0 3.535-.015 3.999-.071 5.378-.06.84-.251 1.455-.386 1.795a2.59 2.59 0 00-.73 1.14 2.59 2.59 0 00-.387.89c-.14.434-.332 1.05-.386 1.795-.06 1.379-.071 1.843-.071 5.378s.013 3.999.071 5.378c.055.84.233 1.455.372 1.795a4.4 4.4 0 001.094 1.69 4.4 4.4 0 001.69 1.094c.379.139.962.317 2.14.372C8.416 23.824 8.796 23.837 12 23.837s3.584-.013 4.856-.071c1.178-.055 1.761-.233 2.14-.372a4.4 4.4 0 001.69-1.094 4.4 4.4 0 001.094-1.69c.139-.379.317-.962.372-2.14.058-1.272.071-1.652.071-4.856s-.013-3.584-.071-4.856c-.055-1.178-.233-1.761-.372-2.14a4.4 4.4 0 00-1.094-1.69 4.4 4.4 0 00-1.69-1.094c-.379-.139-.962-.317-2.14-.372C15.584 1.996 15.204 1.983 12 1.983z"></path><path d="M12 11.238a2.762 2.762 0 100 5.524 2.762 2.762 0 000-5.524zm0 4a1.238 1.238 0 110-2.476 1.238 1.238 0 010 2.476z"></path><circle cx="18.01" cy="6.28" r="1.53"></circle></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.34-1.6.57-2.46.69.89-.54 1.58-1.39 1.9-2.4-1.12.66-2.36 1.14-3.69 1.4-1.06-1.13-2.5-1.84-4.13-1.84-3.13 0-5.67 2.54-5.67 5.67 0 .44.05.87.13 1.28-4.71-.24-8.89-2.49-11.7-5.92-.49.85-.77 1.83-.77 2.87 0 1.96 1 3.69 2.53 4.7-1.11-.03-2.16-.34-3.08-.85v.07c0 2.74 1.95 5.02 4.53 5.54-.47.13-.97.2-1.48.2-.36 0-.71-.03-1.05-.1 1.8 2.24 4.88 3.88 8.16 3.88-2.67 2.09-6.04 3.34-9.7 3.34-.63 0-1.25-.04-1.86-.11C4.34 20.35 8.12 21 12.1 21c7.26 0 11.24-6.02 11.24-11.24 0-.17-.01-.34-.02-.51.78-.56 1.45-1.27 1.99-2.07z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M16.99 0H7.01C3.14 0 0 3.14 0 7.01v9.98C0 20.86 3.14 24 7.01 24h9.98c3.87 0 7.01-3.14 7.01-7.01V7.01C24 3.14 20.86 0 16.99 0zM7 2.44C4.81 2.44 3.01 4.25 3.01 6.44v11.12c0 2.19 1.8 3.99 3.99 3.99h11.12c2.19 0 3.99-1.8 3.99-3.99V6.44c0-2.19-1.8-3.99-3.99-3.99H7zm7.5 1.54h-5v5h5v-5zm-2.5 10c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
