@@ -101,6 +101,66 @@
             </div>
         </div>
     </footer>
+   <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const body = document.body;
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+    </script>
+
+    <button class="chatbot-toggler">
+        <span class="fas fa-commenting"></span>
+    </button>
+    <div class="chatbot">
+        <div class="chatbot-header">
+            <img src="uch.png" alt="Bot Avatar" class="bot-avatar">
+            <div class="header-text">
+                <h3>United Cloud Haven Bot</h3>
+                <span>Online</span>
+            </div>
+            <span class="close-btn fas fa-times"></span>
+        </div>
+        <div class="chat-box" id="chat-box">
+            </div>
+        <form class="chat-form" id="chat-form">
+            <input type="text" id="chat-input" placeholder="Type your message..." required autocomplete="off">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div id="email-form-container" class="email-form-container" style="display: none;">
+            <h3>Can't find what you need?</h3>
+            <p>Our chatbot can't answer your query, but we can connect you with a team member. Fill out the form below and we'll get back to you.</p>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <input type="hidden" name="_subject" value="Chatbot-Initiated Support Request">
+                <input type="hidden" name="_next" value="https://your-website.com/thank-you.html">
+                <input type="hidden" name="initial_query" id="initial-query-input">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Please describe your issue in more detail." rows="5" required></textarea>
+                <button type="submit">Send Email to Support</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="welcome-message" id="welcome-message">
+        <p>Hi, I see that you are browsing the website, is there something I can help you with today ?</p>
+        <span class="close-welcome-btn fas fa-times"></span>
+    </div>
+
     <script src="chatbot.js"></script>
 </body>
 </html>
